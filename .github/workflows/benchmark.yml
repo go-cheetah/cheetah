@@ -1,55 +1,55 @@
 on:
-    push:
-        branches:
-            - main
-    pull_request:
-        branches:
-            - main
-    workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
 
 env:
-    LATEST_GO_VERSION: "1.20"
+  LATEST_GO_VERSION: "1.20"
 
 name: Benchmark
 jobs:
-    Compare:
-        strategy:
-            matrix:
-              os: [ubuntu-latest, macos-latest, windows-latest]
-              # Each major Go release is supported until there are two newer major releases. https://golang.org/doc/devel/release.html#policy
-              # Echo tests with last four major releases (unless there are pressing vulnerabilities)
-              # As we depend on `golang.org/x/` libraries which only support last 2 Go releases we could have situations when
-              # we derive from last four major releases promise.
-              go: ["1.18", "1.19", "1.20"]
-        runs-on: ubuntu-latest
-        steps:
-        - name: Checkout Code (Previous)
-          uses: actions/checkout@v3
-          with:
-            ref: ${{ github.base_ref }}
-            path: previous
+  compare:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        # Each major Go release is supported until there are two newer major releases. https://golang.org/doc/devel/release.html#policy
+        # Echo tests with last four major releases (unless there are pressing vulnerabilities)
+        # As we depend on `golang.org/x/` libraries which only support last 2 Go releases we could have situations when
+        # we derive from last four major releases promise.
+        go: ["1.18", "1.19", "1.20"]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code (Previous)
+      uses: actions/checkout@v3
+      with:
+        ref: ${{ github.base_ref }}
+        path: previous
 
-        - name: Checkout Code (New)
-          uses: actions/checkout@v3
-          with:
-            path: new
+    - name: Checkout Code (New)
+      uses: actions/checkout@v3
+      with:
+        path: new
 
-        - name: Set up Go ${{ matrix.go }}
-          uses: actions/setup-go@v3
-          with:
-            go-version: ${{ env.LATEST_GO_VERSION }}
+    - name: Set up Go ${{ matrix.go }}
+      uses: actions/setup-go@v3
+      with:
+        go-version: ${{ env.LATEST_GO_VERSION }}
 
-        - name: Install Dependencies
-          run: go install golang.org/x/perf/cmd/benchstat@latest
+    - name: Install Dependencies
+      run: go install golang.org/x/perf/cmd/benchstat@latest
 
-        - name: Run Benchmark (Previous)
-          run: |
-            cd previous
-            go test -run="-" -bench=".*" -count=8 ./... > benchmark.txt
-        - name: Run Benchmark (New)
-          run: |
-            cd new
-            go test -run="-" -bench=".*" -count=8 ./... > benchmark.txt
-        - name: Run Benchstat
-          run: |
-            benchstat previous/benchmark.txt new/benchmark.txt
+    - name: Run Benchmark (Previous)
+      run: |
+        cd previous
+        go test -run="-" -bench=".*" -count=8 ./... > benchmark.txt
+    - name: Run Benchmark (New)
+      run: |
+        cd new
+        go test -run="-" -bench=".*" -count=8 ./... > benchmark.txt
+    - name: Run Benchstat
+      run: |
+        benchstat previous/benchmark.txt new/benchmark.txt
