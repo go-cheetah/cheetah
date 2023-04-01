@@ -1,4 +1,9 @@
 # Cheetah
+[![GoDoc](https://img.shields.io/badge/go-documentation-blue?style=flat-square)](https://pkg.go.dev/github.com/go-cheetah/cheetah)
+[![Go Report Card](https://goreportcard.com/badge/github.com/go-cheetah/cheetah?style=flat-square)](https://goreportcard.com/report/github.com/go-cheetah/cheetah)
+[![Codecov](https://img.shields.io/codecov/c/github/go-cheetah/cheetah?style=flat-square)](https://codecov.io/gh/go-cheetah/cheetah)
+[![License](https://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/go-cheetah/cheetah/main/LICENSE)
+
 Cheetah is a lightweight HTTP router for Go, designed to be simple and easy to use.
 
 ## Installation
