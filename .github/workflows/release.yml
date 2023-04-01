@@ -11,6 +11,7 @@ name: Release
 jobs:
   Release:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged
     steps:
       - name: Semver Release
         uses: K-Phoen/semver-release-action@v1.3.2
