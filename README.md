@@ -57,7 +57,7 @@ docker run -it --rm -v ${your_pro_path}:/${your_project_name} gocheetah/cheetah 
 ## gitee和github仓库地址
 
 > github: https://github.com/go-cheetah/cheetah.git  
-> gitee: https://gitee.com/agocan/code-generator.git  
+> gitee: https://gitee.com/go-cheetah/cheetah  
 
 ## 欢迎提 Issue
 
