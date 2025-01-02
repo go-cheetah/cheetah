@@ -55,7 +55,7 @@ docker run -it --rm -v ${your_pro_path}:/${your_project_name} gocheetah/cheetah 
 
 ## Gitee and GitHub Repository Links
 
-> github: https://github.com/go-cheetah/cheetah.git  
+> github: https://github.com/go-cheetah/cheetah  
 > gitee: https://gitee.com/go-cheetah/cheetah
 
 ## Welcome to Open an Issue

@@ -1,1 +1,16 @@
 # {{ .Title }}
+
+> 默认使用ssh密码连接方式，所以需要下载 
+
+## 使用方式
+
+```bash
+# 安装依赖
+# redhat
+yum install ansible sshpass -y
+
+# ubuntu
+apt-get update && apt-get install ansible sshpass -y
+```
+
+客户配置好 `config/config.ini` 文件，然后执行 `bash start.sh` 记可执行

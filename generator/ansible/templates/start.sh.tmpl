@@ -25,12 +25,13 @@ set_contig
 source ${SCRIPT_DIR}/core/gen_inventory_file.sh
 
 function ansible_script(){
-    log_green "start change all application."
-    ansible-playbook -i inventory playbooks/all.yml --become
+    log_green "start change site application."
+    ansible-playbook -i inventory playbooks/site.yml --become
     return $?
 }
 
 function main(){
+    start_time=$(date +%s)
     check_config
 
     log_green "create inventory."
@@ -38,6 +39,10 @@ function main(){
     
     log_green "excute ansible."
     ansible_script
+
+    end_time=$(date +%s)
+    execution_time=$((end_time - start_time))
+    log_green "excute time $execution_time second."
 }
 
 main
