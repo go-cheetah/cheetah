@@ -19,7 +19,7 @@ func NewServerCommand() *cobra.Command {
 		},
 	}
 	// 指定配置参数
-	cmd.Flags().StringVar(&o.ConfFile, "c", "", "Config file path.")
+	cmd.Flags().StringVarP(&o.ConfFile, "config", "c", "", "Config file path.")
 	versionCmd := &cobra.Command{
 		Use:   "version",
 		Short: "Print the version of ci-s.",
