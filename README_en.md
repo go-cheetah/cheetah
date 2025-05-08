@@ -16,6 +16,8 @@ Just as the cheetah conquers nature with speed and agility, the design concept o
 
 `Cheetah` is a Go language scaffold tool designed to help developers quickly build and launch common application architectures and code templates. By encapsulating and automating a series of common technology stacks and development workflows, it enables developers to start projects efficiently and reduces manual configuration and repetitive work.
 
+using standards [Uber Go Style Guide](https://github.com/uber-go/guide/blob/master/style.md)
+
 ## Tool Usage
 
 Use `./cheetah --help` to view help
