@@ -9,4 +9,7 @@ type DB struct {
 		Port     string
 		Host     string
 	}
+	Sqlite struct {
+		FilePath string
+	}
 }

@@ -3,20 +3,15 @@ package health
 import (
 	"net/http"
 
-	"{{ .Title }}/internal/config"
-	"{{ .Title }}/internal/pkg/database"
-
 	"github.com/gin-gonic/gin"
 )
 
-func HealthHandler(conf *config.Config, db database.DB) func(c *gin.Context) {
+func HealthHandler() func(c *gin.Context) {
 
 	return func(c *gin.Context) {
-		service := Health{
-			Config: conf,
-			DB:     db,
-		}
+		service := Health{}
 		res := service.Status()
 		c.JSON(http.StatusOK, res)
 	}
 }
+

@@ -8,13 +8,15 @@ server:
     methods: ["PUT", "PATCH"]
 # 数据库配置项
 db:
-  type: mysql
+  type: sqlite # mysql or sqlite
   mysql:
     dbname: "example"
     password: "root1234"
     username: "root"
     port: 3306
     host: "127.0.0.1"
+  sqlite:
+    filePath: ./test.db
 log:
   # 默认路径是运行程序的目录
   #  path: ./logging
