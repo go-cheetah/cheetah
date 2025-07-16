@@ -2,8 +2,6 @@ package gitbook
 
 import (
 	_ "embed"
-
-	"github.com/go-cheetah/cheetah/config"
 )
 
 var (
@@ -34,16 +32,5 @@ var Dirs = []string{
 
 func GetExtra() map[string]interface{} {
 
-	return map[string]interface{}{
-		"NpmInstallPlugins": config.NpmInstallPlugins,
-		"Plugins":           config.Plugins,
-		"TreeBaToken":       config.TreeBaToken,
-		"GaToken":           config.GaToken,
-		"ExtraPlugins":      config.ExtraPlugins,
-		"Keywords":          config.Keywords,
-		"Description":       config.Description,
-		"Author":            config.Author,
-		"SidebarTitle":      config.SidebarTitle,
-		"SidebarLink":       config.SidebarLink,
-	}
+	return map[string]interface{}{}
 }

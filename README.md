@@ -49,11 +49,11 @@ docker
 docker pull gocheetah/cheetah
 
 your_pro_path=/tmp/demo
-docker run -it --rm -v ${your_pro_path}:/demo gocheetah/cheetah -i mvc
+docker run -it --rm -v ${your_pro_path}:/demo gocheetah/cheetah create mvc 
 
 your_pro_path=/tmp/test
 your_project_name=test
-docker run -it --rm -v ${your_pro_path}:/${your_project_name} gocheetah/cheetah -i mvc -n $your_project_name
+docker run -it --rm -v ${your_pro_path}:/${your_project_name} gocheetah/cheetah create mvc -n $your_project_name
 ```
 
 ## gitee和github仓库地址

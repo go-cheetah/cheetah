@@ -3,7 +3,7 @@ package command
 import (
 	"embed"
 
-	"github.com/go-cheetah/cheetah/generator/gen"
+	"github.com/go-cheetah/cheetah/internal/generator/gen"
 )
 
 //go:embed templates
