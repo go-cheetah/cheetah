@@ -5,10 +5,6 @@ import (
 	"{{ .Title }}/internal/conf"
 )
 
-const (
-	_defaultConfigFile = "conf/conf.yaml"
-)
-
 type AppOptions struct {
 	ConfFile string
 	Config   *conf.Config
@@ -28,8 +24,5 @@ func (o *AppOptions) NewServer() (*internal.Server, error) {
 }
 
 func (o *AppOptions) loadConfig(configFile string) {
-	if configFile == "" {
-		configFile = _defaultConfigFile
-	}
 	o.Config = conf.New(configFile)
 }

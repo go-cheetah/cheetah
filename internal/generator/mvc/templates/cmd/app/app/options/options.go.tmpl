@@ -9,10 +9,6 @@ import (
 	"{{ .Title }}/internal/server"
 )
 
-const (
-	_defaultConfigFile = "config/config.yaml"
-)
-
 type AppOptions struct {
 	ConfFile string
 	Config   *config.Config
@@ -49,9 +45,6 @@ func (o *AppOptions) NewServer() (*server.Server, error) {
 }
 
 func (o *AppOptions) loadConfig(configFile string) {
-	if configFile == "" {
-		configFile = _defaultConfigFile
-	}
 	o.Config = config.New(configFile)
 	if o.Config.Log.Path == "" {
 		o.Config.Log.Path = "./log"
