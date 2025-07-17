@@ -69,7 +69,6 @@ func RunGenerator(opt *Option) (err error) {
 	for _, gen := range GenMgr.genMap {
 		err = gen.Run(opt)
 		if err != nil {
-			fmt.Printf("err: %v", err)
 			return err
 		}
 	}

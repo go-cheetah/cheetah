@@ -2,6 +2,7 @@ package generator
 
 // 创建目录需要单独运行，不放在GeneratorMgr里面
 import (
+	"fmt"
 	"os"
 	"path"
 )
@@ -24,7 +25,8 @@ func (d *DirGenerator) Run(opt *Option) (err error) {
 		fullDir := path.Join(opt.AbsProjectPath, dir)
 		err = os.MkdirAll(fullDir, 0755)
 		if err != nil {
-			panic(err)
+			fmt.Printf("Err create dir %s\n", fullDir)
+			return err
 		}
 	}
 	return nil

@@ -19,7 +19,7 @@ func (f *FileGenerator) Run(opt *Option) error {
 		filePath := path.Join(opt.AbsProjectPath, fileName)
 		err := writeFile(tmpl, filePath, opt)
 		if err != nil {
-			fmt.Printf("create files err：%v", err)
+			fmt.Printf("Err create files %v\n", err)
 			return err
 		}
 	}
