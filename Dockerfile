@@ -2,7 +2,8 @@ FROM golang:1.23.4 AS builder
 ARG VERSION=0.0.7
 WORKDIR /app
 COPY . .
-RUN apt-get update && apt-get install git -y
+RUN apt-get update && apt-get install -y git ca-certificates && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN cd /app/internal/command/templates && \
     git clone -b 0.0.8 https://github.com/go-cheetah/ansible-template.git && \
     git clone -b 0.0.8 https://github.com/go-cheetah/command-template.git && \
