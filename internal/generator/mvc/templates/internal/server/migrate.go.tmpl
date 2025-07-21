@@ -1,7 +1,0 @@
-package server
-
-import "{{ .Title }}/internal/model/health"
-
-func (s *Server) migrate() {
-    health.AutoMigrate(s.DB.GetDB())
-}

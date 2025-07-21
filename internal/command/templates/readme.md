@@ -1,0 +1,10 @@
+|name|repo|tag|
+|---|---|---|
+|mvc|https://github.com/go-cheetah/mvc-template|0.0.8|
+|ansible|https://github.com/go-cheetah/ansible-template|0.0.8|
+|command|https://github.com/go-cheetah/command-template|0.0.8|
+|gitbook|https://github.com/go-cheetah/gitbook-template|0.0.8|
+|grps-go|https://github.com/go-cheetah/grps-go-template|0.0.8|
+|http|https://github.com/go-cheetah/http-template|0.0.8|
+|mdbook|https://github.com/go-cheetah/mdbook-template|0.0.8|
+|simple|https://github.com/go-cheetah/simple-template|0.0.8|
