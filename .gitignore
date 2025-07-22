@@ -4,3 +4,5 @@ demo
 Title
 *-test
 output
+./internal/command/templates/*
+!/internal/command/templates/readme.md
