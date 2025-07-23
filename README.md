@@ -25,14 +25,14 @@
 
 |功能|示例|介绍|demo|
 |---|---|---|---|
-|【golang】基于gin的mvc框架|`cheetah create mvc`|[项目结构](./docs/mvc.md)|[demo地址](https://github.com/go-cheetah/mvc-demo)|
-|【golang】简单函数|`cheetah create simple`|[项目结构](./docs/simple.md)|暂未创建|
-|【golang】简单http|`cheetah create http`|[项目结构](./docs/http.md)|暂未创建|
-|【golang】简单grpc-go|`cheetah create grpc`|[项目结构](./docs/grpc-go.md)|暂未创建|
-|【golang】命令行方式|`cheetah create command`|[项目结构](./docs/command.md)|暂未创建|
-|【ansible】基于shell|`cheetah create ansible`|[项目结构](./docs/ansible.md)|暂未创建|
-|【文档】gitbook|`cheetah create gitbook`|[项目结构](./docs/gitbook.md)|暂未创建|
-|【文档】mdbook|`cheetah create mdbook`|[项目结构](./docs/mdbook.md)|暂未创建|
+|【golang】基于gin的mvc框架|`cheetah create mvc`|[项目结构](https://github.com/go-cheetah/mvc-template)|[demo地址](https://github.com/go-cheetah/mvc-demo)|
+|【golang】简单函数|`cheetah create simple`|[项目结构](https://github.com/go-cheetah/simple-template)|暂未创建|
+|【golang】简单http|`cheetah create http`|[项目结构](https://github.com/go-cheetah/http-template)|暂未创建|
+|【golang】简单grpc-go|`cheetah create grpc-go`|[项目结构](https://github.com/go-cheetah/grpc-go-template)|暂未创建|
+|【golang】命令行方式|`cheetah create command`|[项目结构](https://github.com/go-cheetah/command-template)|暂未创建|
+|【ansible】基于shell|`cheetah create ansible`|[项目结构](https://github.com/go-cheetah/ansible-template)|暂未创建|
+|【文档】gitbook|`cheetah create gitbook`|[项目结构](https://github.com/go-cheetah/gitbook-template)|暂未创建|
+|【文档】mdbook|`cheetah create mdbook`|[项目结构](https://github.com/go-cheetah/mdbook-template)|暂未创建|
 
 ### 安装
 

@@ -30,7 +30,7 @@ jobs:
         git clone -b 0.0.8 https://github.com/go-cheetah/ansible-template.git ansible &&     \
         git clone -b 0.0.8 https://github.com/go-cheetah/command-template.git command &&     \
         git clone -b 0.0.8 https://github.com/go-cheetah/gitbook-template.git gitbook &&     \
-        git clone -b 0.0.8 https://github.com/go-cheetah/grps-go-template.git grps-go &&     \
+        git clone -b 0.0.8 https://github.com/go-cheetah/grpc-go-template.git grpc-go &&     \
         git clone -b 0.0.8 https://github.com/go-cheetah/http-template.git http &&     \
         git clone -b 0.0.8 https://github.com/go-cheetah/mdbook-template.git mdbook &&     \
         git clone -b 0.0.8 https://github.com/go-cheetah/mvc-template.git mvc &&     \
