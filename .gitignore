@@ -4,4 +4,4 @@ demo
 Title
 *-test
 output
-./internal/command/templates/*
+templates
