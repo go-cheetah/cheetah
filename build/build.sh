@@ -2,17 +2,22 @@
 
 BASH_NAME=$0
 SCRIPT_DIR=$(cd $(dirname ${BASH_SOURCE[0]}); pwd)
+WORK_DIR=$(cd ${SCRIPT_DIR}/..; pwd)
 
-cd ${SCRIPT_DIR}/../internal/command/templates 
-git clone -b 0.0.8 https://github.com/go-cheetah/ansible-template.git ansible 
-git clone -b 0.0.8 https://github.com/go-cheetah/command-template.git command 
-git clone -b 0.0.8 https://github.com/go-cheetah/gitbook-template.git gitbook 
-git clone -b 0.0.8 https://github.com/go-cheetah/grpc-go-template.git grpc-go 
-git clone -b 0.0.8 https://github.com/go-cheetah/http-template.git http 
-git clone -b 0.0.8 https://github.com/go-cheetah/mdbook-template.git mdbook 
-git clone -b 0.0.8 https://github.com/go-cheetah/mvc-template.git mvc 
-git clone -b 0.0.8 https://github.com/go-cheetah/simple-template.git simple
-cd - 
+TEMPLATE_DIR=${WORK_DIR}/internal/command/templates
+
+rm -rf ${TEMPLATE_DIR}
+mkdir -p ${TEMPLATE_DIR}
+git clone -b 0.0.8 https://github.com/go-cheetah/ansible-template.git ${TEMPLATE_DIR}/ansible 
+git clone -b 0.0.8 https://github.com/go-cheetah/command-template.git ${TEMPLATE_DIR}/command 
+git clone -b 0.0.8 https://github.com/go-cheetah/gitbook-template.git ${TEMPLATE_DIR}/gitbook 
+git clone -b 0.0.8 https://github.com/go-cheetah/grpc-go-template.git ${TEMPLATE_DIR}/grpc-go 
+git clone -b 0.0.8 https://github.com/go-cheetah/http-template.git ${TEMPLATE_DIR}/http 
+git clone -b 0.0.8 https://github.com/go-cheetah/mdbook-template.git ${TEMPLATE_DIR}/mdbook 
+git clone -b 0.0.8 https://github.com/go-cheetah/mvc-template.git ${TEMPLATE_DIR}/mvc 
+git clone -b 0.0.8 https://github.com/go-cheetah/simple-template.git ${TEMPLATE_DIR}/simple
+
+cd ${WORK_DIR}
 
 shot_ID=$(git rev-parse --short HEAD)
 
