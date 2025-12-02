@@ -10,7 +10,7 @@ rm -rf ${TEMPLATE_DIR}
 mkdir -p ${TEMPLATE_DIR}
 git clone -b 0.0.9-develop https://github.com/go-cheetah/ansible-template.git ${TEMPLATE_DIR}/ansible 
 git clone -b 0.0.8 https://github.com/go-cheetah/command-template.git ${TEMPLATE_DIR}/command 
-git clone -b 0.0.8 https://github.com/go-cheetah/gitbook-template.git ${TEMPLATE_DIR}/gitbook 
+git clone -b 0.0.9-develop https://github.com/go-cheetah/gitbook-template.git ${TEMPLATE_DIR}/gitbook 
 git clone -b 0.0.8 https://github.com/go-cheetah/grpc-go-template.git ${TEMPLATE_DIR}/grpc-go 
 git clone -b 0.0.8 https://github.com/go-cheetah/http-template.git ${TEMPLATE_DIR}/http 
 git clone -b 0.0.8 https://github.com/go-cheetah/mdbook-template.git ${TEMPLATE_DIR}/mdbook 
