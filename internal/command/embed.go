@@ -9,7 +9,7 @@ import (
 	"text/template"
 )
 
-//go:embed all:templates/*
+//go:embed all:templates\*
 var allTemplates embed.FS
 
 func (s *Command) gen(name string) error {
@@ -25,8 +25,8 @@ func (s *Command) processDir(srcDir, destDir string) error {
 	}
 
 	for _, entry := range entries {
-		srcPath := filepath.Join(srcDir, entry.Name())
-		destPath := filepath.Join(destDir, entry.Name())
+		srcPath := fmt.Sprintf("%s/%s", srcDir, entry.Name())
+		destPath := fmt.Sprintf("%s/%s", destDir, entry.Name())
 
 		if entry.IsDir() {
 			// 递归处理子目录
