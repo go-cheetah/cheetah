@@ -9,7 +9,7 @@ import (
 	"text/template"
 )
 
-//go:embed all:templates\*
+//go:embed all:templates/*
 var allTemplates embed.FS
 
 func (s *Command) gen(name string) error {
