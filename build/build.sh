@@ -8,13 +8,13 @@ TEMPLATE_DIR=${WORK_DIR}/internal/command/templates
 
 rm -rf ${TEMPLATE_DIR}
 mkdir -p ${TEMPLATE_DIR}
-git clone -b 0.0.9-develop https://github.com/go-cheetah/ansible-template.git ${TEMPLATE_DIR}/ansible 
-git clone -b 0.0.8 https://github.com/go-cheetah/command-template.git ${TEMPLATE_DIR}/command 
-git clone -b 0.0.9-develop https://github.com/go-cheetah/gitbook-template.git ${TEMPLATE_DIR}/gitbook 
+git clone -b 0.0.9 https://github.com/go-cheetah/ansible-template.git ${TEMPLATE_DIR}/ansible 
+git clone -b 0.0.9 https://github.com/go-cheetah/command-template.git ${TEMPLATE_DIR}/command 
+git clone -b 0.0.9 https://github.com/go-cheetah/gitbook-template.git ${TEMPLATE_DIR}/gitbook 
 git clone -b 0.0.8 https://github.com/go-cheetah/grpc-go-template.git ${TEMPLATE_DIR}/grpc-go 
 git clone -b 0.0.8 https://github.com/go-cheetah/http-template.git ${TEMPLATE_DIR}/http 
 git clone -b 0.0.8 https://github.com/go-cheetah/mdbook-template.git ${TEMPLATE_DIR}/mdbook 
-git clone -b 0.0.9-develop https://github.com/go-cheetah/mvc-template.git ${TEMPLATE_DIR}/mvc 
+git clone -b 0.0.9 https://github.com/go-cheetah/mvc-template.git ${TEMPLATE_DIR}/mvc 
 git clone -b 0.0.8 https://github.com/go-cheetah/simple-template.git ${TEMPLATE_DIR}/simple
 
 cd ${WORK_DIR}
