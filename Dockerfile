@@ -1,5 +1,5 @@
 FROM golang:1.23.4 AS builder
-ARG VERSION=0.0.7
+ARG VERSION=0.0.9
 WORKDIR /app
 COPY . .
 RUN apt-get update && apt-get install -y wget git ca-certificates && \
