@@ -14,7 +14,7 @@ git clone -b 0.0.9 https://github.com/go-cheetah/gitbook-template.git ${TEMPLATE
 git clone -b 0.0.8 https://github.com/go-cheetah/grpc-go-template.git ${TEMPLATE_DIR}/grpc-go 
 git clone -b 0.0.8 https://github.com/go-cheetah/http-template.git ${TEMPLATE_DIR}/http 
 git clone -b 0.0.8 https://github.com/go-cheetah/mdbook-template.git ${TEMPLATE_DIR}/mdbook 
-git clone -b 0.0.9 https://github.com/go-cheetah/mvc-template.git ${TEMPLATE_DIR}/mvc 
+git clone -b 0.1.0 https://github.com/go-cheetah/mvc-template.git ${TEMPLATE_DIR}/mvc 
 git clone -b 0.0.8 https://github.com/go-cheetah/simple-template.git ${TEMPLATE_DIR}/simple
 
 cd ${WORK_DIR}
