@@ -3,6 +3,8 @@
 
 ![logo](logo/logo.png)
 
+> 最近工作繁忙，该工具维护会比较慢，如果有需求可以提issue， 我经常都会查看
+
 ---
 [English](README_en.md)
 ---
