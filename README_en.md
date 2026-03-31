@@ -24,14 +24,15 @@ Use `./cheetah --help` to view help
 
 | Feature | Command Example | Description | Demo |
 | --- | --- | --- | --- |
-| **Golang** Gin-based MVC Framework | `cheetah create mvc` | [Project Structure](./docs/mvc.md) | [Demo Link](https://github.com/go-cheetah/mvc-demo) |
-| **Golang** Simple Functions | `cheetah create simple` | [Project Structure](./docs/simple.md) | Not Created Yet |
-| **Golang** Simple HTTP | `cheetah create http` | [Project Structure](./docs/http.md) | Not Created Yet |
-| **Golang** Simple grpc-go | `cheetah create grpc-go` | [Project Structure](./docs/grpc.md) | Not Created Yet |
-| **Golang** Command Line Approach | `cheetah create command` | [Project Structure](./docs/command.md) | Not Created Yet |
-| **Ansible** Based on Shell | `cheetah create ansible` | [Project Structure](./docs/ansible.md) | Not Created Yet |
-| **Documentation** gitbook | `cheetah create gitbook` | [Project Structure](./docs/gitbook.md) | Not Created Yet |
-| **Documentation** mdbook | `cheetah create mdbook` | [Project Structure](./docs/mdbook.md) | Not Created Yet |
+| **Golang** Gin-based MVC Framework | `cheetah create mvc` | [Project Structure](https://github.com/go-cheetah/mvc-template) | [Demo Link](https://github.com/go-cheetah/mvc-demo) |
+| **Golang** DDD-based Framework | `cheetah create ddd` | [Project Structure](https://github.com/go-cheetah/ddd-template) | Not Created Yet |
+| **Golang** Simple Functions | `cheetah create simple` | [Project Structure](https://github.com/go-cheetah/simple-template) | Not Created Yet |
+| **Golang** Simple HTTP | `cheetah create http` | [Project Structure](https://github.com/go-cheetah/http-template) | Not Created Yet |
+| **Golang** Simple grpc-go | `cheetah create grpc-go` | [Project Structure](https://github.com/go-cheetah/grpc-go-template) | Not Created Yet |
+| **Golang** Command Line Approach | `cheetah create command` | [Project Structure](https://github.com/go-cheetah/command-template) | Not Created Yet |
+| **Ansible** Based on Shell | `cheetah create ansible` | [Project Structure](https://github.com/go-cheetah/ansible-template) | Not Created Yet |
+| **Documentation** gitbook | `cheetah create gitbook` | [Project Structure](https://github.com/go-cheetah/gitbook-template) | Not Created Yet |
+| **Documentation** mdbook | `cheetah create mdbook` | [Project Structure](https://github.com/go-cheetah/mdbook-template) | Not Created Yet |
 
 ### guide
 

@@ -28,6 +28,7 @@
 |功能|示例|介绍|demo|
 |---|---|---|---|
 |【golang】基于gin的mvc框架|`cheetah create mvc`|[项目结构](https://github.com/go-cheetah/mvc-template)|[demo地址](https://github.com/go-cheetah/mvc-demo)|
+|【golang】基于DDD的框架|`cheetah create ddd`|[项目结构](https://github.com/go-cheetah/ddd-template)|暂未创建|
 |【golang】简单函数|`cheetah create simple`|[项目结构](https://github.com/go-cheetah/simple-template)|暂未创建|
 |【golang】简单http|`cheetah create http`|[项目结构](https://github.com/go-cheetah/http-template)|暂未创建|
 |【golang】简单grpc-go|`cheetah create grpc-go`|[项目结构](https://github.com/go-cheetah/grpc-go-template)|暂未创建|
