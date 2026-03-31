@@ -49,6 +49,7 @@ func NewServerCommand() *cobra.Command {
 	newCommand(o, projectCmd, "http")
 	newCommand(o, projectCmd, "command")
 	newCommand(o, projectCmd, "grpc-go")
+	newCommand(o, projectCmd, "ddd")
 
 	return cmd
 }
